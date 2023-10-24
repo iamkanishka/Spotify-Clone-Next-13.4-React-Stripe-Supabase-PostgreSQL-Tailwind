@@ -21,11 +21,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={figtree.className}>
-        <SupabaseProvider>
+        {/* <SupabaseProvider>
           <UserProvider>
             <ModalProvider>
             <Sidebar>{children}</Sidebar>
             </ModalProvider>
+          </UserProvider>
+        </SupabaseProvider> */}
+        <SupabaseProvider>
+          <UserProvider>
+            <ModalProvider/>
+              <Sidebar>{children}</Sidebar>
+          
           </UserProvider>
         </SupabaseProvider>
       </body>
