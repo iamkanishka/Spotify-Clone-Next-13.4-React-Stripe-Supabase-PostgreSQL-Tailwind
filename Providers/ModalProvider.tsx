@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import AuthModal from "@/app/components/AuthModal";
+import UploadModal from "@/app/components/UploadModal";
 // import SubscribeModal from "@/components/SubscribeModal";
 // import UploadModal from "@/components/UploadModal";
 // import { ProductWithPrice } from "@/types";
@@ -29,8 +30,9 @@ const ModalProvider = () =>
     return (
       <>
         <AuthModal />
+        <UploadModal />
         {/* <SubscribeModal products={products} />
-      <UploadModal /> */}
+       */}
       </>
     );
   };
